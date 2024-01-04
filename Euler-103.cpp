@@ -17,7 +17,7 @@ void output(int i, double ynl, double xnl)  //文件读写函数
     fprintf(fp,"y%d=%lf\n",i,ynl);
 }
 
-int main()
+void main7()
 {
     int i;
     double y0;
@@ -47,5 +47,4 @@ int main()
     }
     fclose(fp);
     printf("输出文件已放在源代码同目录\n");
-    return 0;
 }

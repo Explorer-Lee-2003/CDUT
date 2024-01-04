@@ -1,6 +1,7 @@
 #include<stdio.h>
-# define N 100	
-int main()		//copyright(c) 103
+# define N 100
+
+void main5()		//copyright(c) 103
 {
     //设置数据; 
 	int n,i,j;double l[N],l1[N],l2[N],x,y=0 ,x1[N],y1[N];
@@ -43,5 +44,4 @@ int main()		//copyright(c) 103
     	y=y+l[i]*y1[i];
 	}
 	printf("%lf",y);
-	return 0;
 }

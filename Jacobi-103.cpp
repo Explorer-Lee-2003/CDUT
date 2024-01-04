@@ -122,7 +122,7 @@ void print()
 
 
 
-int main()
+void main2()
 {
     void InitMatrix();
     void Jacobi();
@@ -136,6 +136,5 @@ int main()
     InitMatrix();
     Jacobi();
     print();
-    return 0;
 }
 

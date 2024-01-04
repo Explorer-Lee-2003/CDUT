@@ -57,7 +57,7 @@ int Direct( int n, double a[][MAX_SIZE], double b[] )  /*--- 输出直接法的�
     return flag;
 }
 
-int main()
+void main3()
 {
     int n, i, j;
     double a[MAX_SIZE][MAX_SIZE], b[MAX_SIZE];
@@ -78,5 +78,4 @@ int main()
     }
     else
         printf("计算错误！\n");
-  return 0;
 }

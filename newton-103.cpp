@@ -38,13 +38,13 @@ float newton(float x0,float eps)		//牛顿迭代法主算法 copyright(c) 103
 	return x1;
 }
 
-int main()
+void main1()
 {
-	float x0, y0, eps, eta;
+	float x0, y0, eps;
 	printf("输入x0\n");
-	scanf_s("%f", &x0);
+	scanf("%f", &x0);
 	printf("输入eps\n");
-	scanf_s("%e", &eps);
+	scanf("%e", &eps);
 	y0 = newton(x0,eps);
 	printf("方程根%f\n", y0);
 }

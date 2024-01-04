@@ -1,7 +1,7 @@
 #include <stdio.h>  
 #include <math.h>   
-#define a 1.0 //积分下限 
-#define b 6.0  //积分上限  
+#define c 1.0 //积分下限 
+#define d 6.0  //积分上限  
   
 double f(double x)  //被积函数
 {  
@@ -16,7 +16,7 @@ void output(double T2, double T1) //文本读写操作
   fprintf(fp,"误差：%le\n",T2-T1);
 }
 
-int main()  
+void main6()  
 {  
   int k,i; 
   double eps;  
@@ -36,12 +36,12 @@ int main()
  for(i=0;i<=k;i++)
  {
    n=pow(2,i);  //pow()求幂运算函数
-   h=(b-a)/n;
-   T1=((f(a)+f(b))*h)/2;
+   h=(d-c)/n;
+   T1=((f(c)+f(d))*h)/2;
     do
     {  
       s=0;
-      x=a+k*h+h/2;
+      x=c+k*h+h/2;
       s=s+f(x);
       T2=(T1+h*s)/2;
       n=n*2;
@@ -57,7 +57,6 @@ int main()
  }
  fclose(fp);
  printf("输出文件已放在源代码同目录\n");
-  return 0;
 }
     
     
