@@ -39,6 +39,6 @@ int main4()
     b=(c1*u21-c2*u11)/(u21*u12-u22*u11);
 
     //输出最小二乘解
-    printf("\n最小二乘解的线性方程为 :S(x)=%f+%fx   y=%lf\n",a,b);
+    printf("\n最小二乘解的线性方程为 :S(x)=%f+%fx",a,b);
     return 0;
 }

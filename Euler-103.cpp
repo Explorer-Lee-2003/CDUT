@@ -8,7 +8,7 @@ double f(double x, double y) //目标函数
     return -2*x*y;
 }
 
-void output(int i, double ynl, double xnl)  //文件读写函数
+void output2(int i, double ynl, double xnl)  //文件读写函数
 {
     FILE*fp;
     fp=fopen("Euler.txt","a+");
@@ -31,7 +31,9 @@ void main7()
     FILE *fp;
     fp=fopen("Euler.txt","w+");
     fprintf(fp,"");
-    fclose(fp);
+    fprintf(fp,"0      ");
+    fprintf(fp,"0.000000     ");
+    fprintf(fp,"0.990000\n");
     //改进欧拉法核心
     h = (b - a) / n;
     xn = a;
@@ -41,7 +43,7 @@ void main7()
         xnl = xn + h;
         ynlb = yn + h * f(xn, yn);
         ynl = yn + h / 2 * (f(xn, yn) + f(xnl, ynlb));
-        output(i,ynl,xnl);
+        output2(i,ynl,xnl);
         xn = xnl;
         yn = ynl;
     }
